@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Winning">
+        <h2 id="winLoose">Congrats!!! You have Guessed the Correct Number <br> ❤❤😃😃</h2>
+        <p id="message1">the number was 100</p>
+        <p id="message2">Your Guesses were 23,56,78,90,34,56,78,</p>  
+        <p id="message3"> You have guessed it in 10 attempts</p>
+
+        <button id="reset">Reset</button>
+    </div>
+    <div class="container">
+        <h3>Guess a Number Between 1-100</h3>
+        <p>You Have Only 10 attempts!!!</p>
+
+        <input type="text" placeholder=" " id="guess"><br>
+        <button onclick="play()" id="my_btn">Check</button>
+        <p id="lowhigh"></p>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(154, 245, 245);
+}
+
+.container{
+    width: 50vh;
+    min-width: 580px;
+    padding: 50px 10px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    justify-items: center;
+    display: grid;
+    border-radius: 5px;
+    z-index: 0;
+}
+h3{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+input[type="text"]{
+    width: 90px;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    border: none;
+    background-color: aliceblue;
+}
+button{
+    width: 100px;
+    outline: none;
+    border: none;
+    padding: 15px 0;
+    transition: 0.5s;
+    border-radius: 3px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+button:hover{
+    opacity: 1;
+    background-color: rgb(168, 178, 196);
+}
+p{
+    font-weight: 500;
+    font-size: 20px;
+}
+#message1{
+    font-weight: 300;
+}
+#reset{
+    margin-top: 20px;
+}
+.Winning{
+    height: 35vh;
+    width: 30vw;
+    background-color: aliceblue;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px 30px;
+    border-radius: 3px;
+    display: none;
+}
+#message2 {
+    font-size: 15px;
+}
+
+@media(max-width:800px){
+    .Winning{
+        position: absolute;
+        width: 40vh;
+    }
+}
+@media(max-height:890px){
+    .Winning{
+        position: absolute;
+        height: 40vh;
+    }
+}
+@media(max-height:642px){
+    .Winning{
+        position: absolute;
+        height: 40vh;
+    }
+    #winLoose{
+        font-size: 1em;
+    }
+}
+@media(max-height:603px){
+    .Winning{
+        position: absolute;
+        height: 60vh;
+        width: 60vw;
+    }
+    #reset{
+        margin-top: 0px;
+    }
+}
+@media(max-height:650px){
+    .container{
+        width: 50vw;
+        height: 80vh;
+    }
+    h3{
+        margin-top: -30px;
+    }
+}
+@media(max-width:650px) {
+    .container{
+        width: 50vw;
+        height: 70vh;
+        min-width: 280px;
+        position: absolute;
+        justify-items: center;
+        display: grid;
+        text-align: center;
+    }
+    p{
+        font-size: 1em;
+    }
+}
